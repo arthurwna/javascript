@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(141, 102, 248);
+            font: normal 18pt arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com dom</h1>
+    <p>aqui vai o reultado</p>
+    <p>aprendendo usar DOM em JavaScript</p>
+    <div id="msg">clique aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        document.write(p1.innerHTML)
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        var d=window.document.getElementById('msg')
+        d.style.background = 'yellow'
+    </script>
+</body>
+</html>
